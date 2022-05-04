@@ -3,7 +3,7 @@
 import image from "./test1.jpg";
 
 
- class Login extends React.Component{
+ class Login extends React.Component{ 
     render(){
         return (
         <body style = {{backgroundImage:`url(${image})`,backgroundRepeat:"no-repeat",backgroundSize:"cover", height: 800, width: 1500}}>
