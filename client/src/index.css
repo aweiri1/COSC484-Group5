@@ -1,4 +1,3 @@
-
 /*\
  *
  * Placeholder. Copy/Pasted from a previous project.
@@ -43,7 +42,7 @@ body{
   /* background-image: url(https://images.unsplash.com/photo-1615485925807-d11c291f531c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1974&q=80); */
   height: 100%;
   background-position: center;
-  background-repeat: no-repeat;
+  background-repeat: no-repeat !important;
   background-size: cover; 
   /* background-size: 1010px;  */
   
@@ -51,12 +50,14 @@ body{
 }
 
 .container2{
-  max-width: 90%;
+  max-width: 90% !important;
   margin:auto;
+  background: scroll;
 }
 
 .logo{
   margin-right: 15px;
+  width: 324px !important;
 }
 
 .tuColor{
@@ -66,6 +67,11 @@ body{
 .profile-img{
  filter: invert();
  width: 60px;
+}
+
+.full-contain{
+  
+  min-height: 100vh;
 }
 
 /* .nav-links{
@@ -81,14 +87,16 @@ body{
 }
 
 .header{
-  background-color: rgba(253, 183, 183, 0.055); 
+  background-color:transparent; 
   /* filter:drop-shadow(2px 5px 20px);
   filter: opacity(100%); */
+  position: sticky;
+  top: 0;
 }
 
 .row{
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   
 }
 
@@ -208,10 +216,101 @@ ul{
   cursor: pointer;
 }
 
+.nav-links{
+  width: 624px !important;
+}
+
 .nav-links li a{
   transition: all 0.3s ease;
 }
 .nav-links li a.active,
 .nav-links li a:hover{
   color:rgb(218, 95, 73);  
+}
+
+/* footer */
+
+.mediaFooter {
+  padding: 0;
+  
+  list-style-type: none;
+  opacity: 50%;
+  filter: brightness(0) invert(1);
+}
+
+.ul_horizontal li {
+  display: inline;
+}
+
+.footer ul li {
+  margin-left: 50px;
+}
+
+.footer-elements {
+  background: transparent;
+  height: 120px;
+  width: 100%;
+  left: 0;
+  padding-top: -30px;
+}
+.footer {
+  color:goldenrod;
+  height: 140px;
+  width: 100%;
+  z-index: -200px;
+  bottom: 0 !important;
+  position:relative;
+  background-color: rgba(54, 53, 53, 0.561);
+}
+
+.footer-copyright {
+  background: transparent;
+  color: rgba(161, 123, 24, 0.746);
+  bottom:0;
+  text-align: center;
+  width: 100%;
+  left: 0px;
+  padding-top: 0px;
+}
+
+.about {
+  width: 25%;
+  top: 10px;
+  font-size: 11px;
+  margin: 0;
+  padding-left: 15px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.h5-type {
+  font-family: mr-eaves-xl-modern, sans-serif;
+  font-weight: 600;
+}
+
+.followUs {
+  font-family: mr-eaves-xl-modern, sans-serif;
+  font-weight: 600;
+  width: 100%;
+  top: 10px;
+  margin: 0;
+  padding-left: 0px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.support {
+  top: 10px;
+  font-size: 11px;
+  margin: 0;
+  padding-left: 0px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+a {
+  margin-left: 0;
 }

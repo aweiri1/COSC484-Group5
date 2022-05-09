@@ -83,6 +83,7 @@ const Inventory = () => {
    // }
         //need to add another list for allergies
     return ( 
+        <div className="column">
         <div className = "App">
         <header class = "page-header">
         <h1> Welcome To Your Account! </h1>
@@ -95,6 +96,7 @@ const Inventory = () => {
         handleFilter = { handleFilter }/> 
         <RequestIngre addIngrediant = { addIngrediant }/>
         <Generate RecipeSearch = { RecipeSearch }/> 
+        </div>
         </div>
     );
 }
